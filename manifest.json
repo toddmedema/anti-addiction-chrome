@@ -1,0 +1,21 @@
+{
+   "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"]
+   }],
+   "description": "Fight Internet addiction, and regain focus in your life. Fully open source, and no analytics or tracking!",
+   "icons": {
+      "128": "icon_128x128.png"
+   },
+   "manifest_version": 2,
+   "name": "Anti-Addiction - Get Your Focus Back",
+   "offline_enabled": true,
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "activeTab", "storage" ],
+   "short_name": "AntiAddiction",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.0"
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anti-addiction Extension Options</title>
+  <style>
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 7px;
+    }
+    input {
+      margin-top: 2px;
+    }
+    #save {
+      margin-top: 20px;
+      font-size: 120%;
+    }
+    input {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset>
+    Delay to load addicting websites (seconds)
+    <input type="text" id="delay" />
+  </fieldset>
+
+  <fieldset>
+    Message to display
+    <input type="text" id="message" />
+  </fieldset>
+
+  <fieldset>
+    Addicting URLs to delay (comma-separated)
+    <input type="text" id="urls" />
+  </fieldset>
+
+  <div style="text-align: center; font-weight: bold;">
+    <button id="save" style="width: 100%;">Save Settings</button>
+  </div>
+
+  <br/>
+
+  <div style="text-align: center;">
+    <a href="https://chrome.google.com/webstore/detail/world-view-wallpaper-tab/bdnobddpgjhaenonjkngfhcknndajiia/reviews">Leave a review</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:Todd@Fabricate.io">Send feedback</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/toddmedema/anti-addition-chrome">Source code</a>
+  </div>
+
+  <script src="js/options.js"></script>
+</body>
+</html>
