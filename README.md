@@ -2,7 +2,7 @@
 
 Free yourself from digital addiction by slowing down websites that are trying to steal your focus. Get it free on the [Chrome Extension Store](https://chrome.google.com/webstore/detail/world-view-wallpaper-tab/bdnobddpgjhaenonjkngfhcknndajiia).
 
-Part of the [World View Wallpaper project](http://WorldViewWallpaper.com).
+Made by [Fabricate.io](http://fabricate.io).
 
 ## Contributing
 
