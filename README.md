@@ -1,6 +1,6 @@
 # Anti-Addiction Chrome Extension
 
-Free yourself from digital addiction by slowing down websites that are trying to steal your focus. Get it free on the [Chrome Extension Store](https://chrome.google.com/webstore/detail/world-view-wallpaper-tab/bdnobddpgjhaenonjkngfhcknndajiia).
+Free yourself from digital addiction by slowing down websites that are trying to steal your focus. Get it free on the [Chrome Extension Store](https://chrome.google.com/webstore/detail/hgokmjffmfnkaofmgjekjpiiocfafdoc/publish-accepted).
 
 Made by [Fabricate.io](http://fabricate.io).
 
