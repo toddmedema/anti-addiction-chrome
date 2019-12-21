@@ -1,7 +1,7 @@
 chrome.storage.sync.get({
   delay: 2000,
   message: 'Don\'t feed the addiction!',
-    urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com'],
+  urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
   // DEFAULTS - also change in options.js
 }, (settings) => {
   if (settings.urls.some((check) => window.location.href.indexOf(check) >= 0)) {

@@ -8,14 +8,14 @@
       "128": "icon_128x128.png"
    },
    "manifest_version": 2,
-   "name": "Anti-Addiction - Get Your Focus Back",
+   "name": "Get Your Focus Back",
    "offline_enabled": true,
    "options_ui": {
       "chrome_style": true,
       "page": "options.html"
    },
    "permissions": [ "activeTab", "storage" ],
-   "short_name": "AntiAddiction",
+   "short_name": "Focus",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.1.0"
+   "version": "1.0.0"
 }

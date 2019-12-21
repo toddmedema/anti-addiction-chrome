@@ -5,8 +5,8 @@ function restore_options() {
   chrome.storage.sync.get({
     delay: 10000,
     message: 'Don\'t feed the addiction!',
-    urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com'],
-    version: '0.1.0',
+    urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
+    version: '1.0.0',
     // DEFAULTS - also change in content.js
   }, (items) => {
     document.getElementById('delay').value = Math.round(items.delay / 1000);
