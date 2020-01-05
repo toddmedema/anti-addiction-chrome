@@ -1,7 +1,7 @@
 chrome.storage.sync.get({
   delay: 2000,
-  greyscale: true,
-  message: 'Don\'t feed the addiction!',
+  greyscale: 100,
+  message: 'Shouldn\'t you be doing something else?',
   urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
   // DEFAULTS - also change in options.js
 }, (settings) => {
@@ -32,7 +32,7 @@ function delaySite(settings) {
   document.body.appendChild(div);
 
   if (settings.greyscale) {
-    document.body.style.cssText = document.body.style.cssText + ' filter: grayscale(100%);';
+    document.body.style.cssText = document.body.style.cssText + ` filter: grayscale(${settings.greyscale}%);`;
   }
 
   setTimeout(() => {
