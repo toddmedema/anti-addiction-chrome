@@ -5,12 +5,14 @@ function restore_options() {
   chrome.storage.sync.get({
     delay: 10000,
     message: 'Don\'t feed the addiction!',
+    greyscale: true,
     urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
-    version: '1.0.0',
+    version: '1.1.0',
     // DEFAULTS - also change in content.js
   }, (items) => {
     document.getElementById('delay').value = Math.round(items.delay / 1000);
     document.getElementById('message').value = items.message;
+    document.getElementById('greyscale').value = items.greyscale;
     document.getElementById('urls').value = items.urls.join(',');
   });
 }
@@ -24,6 +26,7 @@ function save_options() {
   chrome.storage.sync.set({
     delay: document.getElementById('delay').value * 1000,
     message: document.getElementById('message').value,
+    greyscale: document.getElementById('greyscale').value,
     urls: document.getElementById('urls').value.split(',').map((url) => url.trim()),
   }, () => {
     // Update status to let user know options were saved.

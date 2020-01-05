@@ -1,15 +1,16 @@
 chrome.storage.sync.get({
   delay: 2000,
+  greyscale: true,
   message: 'Don\'t feed the addiction!',
   urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
   // DEFAULTS - also change in options.js
 }, (settings) => {
   if (settings.urls.some((check) => window.location.href.indexOf(check) >= 0)) {
-    delaySite(settings.delay);
+    delaySite(settings);
   }
 });
 
-function delaySite(delay) {
+function delaySite(settings) {
   var div = document.createElement('div');
   div.id = "antiaddiction";
   div.innerHTML = 'Shouldn\'t you be doing something else?';
@@ -30,8 +31,14 @@ function delaySite(delay) {
   `;
   document.body.appendChild(div);
 
+  if (settings.greyscale) {
+    document.body.style.cssText = document.body.style.cssText + ' filter: grayscale(100%);';
+  }
+
   setTimeout(() => {
     var elem = document.querySelector('#antiaddiction');
-    elem.parentNode.removeChild(elem);
-  }, delay);
+    if (elem) {
+      elem.parentNode.removeChild(elem);
+    }
+  }, settings.delay);
 }
