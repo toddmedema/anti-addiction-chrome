@@ -9,38 +9,36 @@
       margin: 0;
       margin-bottom: 7px;
     }
-    input {
+    input, textarea {
       margin-top: 2px;
+      width: 100%;
     }
     #save {
       margin-top: 20px;
       font-size: 120%;
-    }
-    input {
-      width: 100%;
     }
   </style>
 </head>
 
 <body>
   <fieldset>
-    Delay to load addicting websites (seconds)
+    Addicting websites
+    <textarea id="urls" spellcheck="false" rows="4" placeholder="facebook.com,reddit.com,instagram.com"></textarea>
+  </fieldset>
+
+  <fieldset>
+    Loading delay for addicting websites (seconds)
     <input type="text" id="delay" />
   </fieldset>
 
   <fieldset>
-    Message to display
+    Message to display while loading
     <input type="text" id="message" />
   </fieldset>
 
   <fieldset>
-    Addicting URLs to delay (comma-separated)
-    <input type="text" id="urls" />
-  </fieldset>
-
-  <fieldset>
-    Greyscale (massively effective - what % you want to desaturate websites, 0-100)
-    <input type="number" id="greyscale" />
+    Greyscale (massively effective - % to desaturate addicting websites)
+    <input type="number" id="greyscale" placeholder="0-100" />
   </fieldset>
 
   <div style="text-align: center; font-weight: bold;">

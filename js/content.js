@@ -2,7 +2,7 @@ chrome.storage.sync.get({
   delay: 2000,
   greyscale: 100,
   message: 'Shouldn\'t you be doing something else?',
-  urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com'],
+  urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com', 'thisiswhyimbroke.com', 'iwastesomuchtime.com', 'pinterest.com', 'failblog.org', 'overstock.com', 'popcap.com'],
   // DEFAULTS - also change in options.js
 }, (settings) => {
   if (settings.urls.some((check) => window.location.href.indexOf(check) >= 0)) {
