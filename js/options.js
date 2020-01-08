@@ -7,7 +7,7 @@ function restore_options() {
     message: 'Shouldn\'t you be doing something else?',
     greyscale: 100,
     urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com', 'thisiswhyimbroke.com', 'iwastesomuchtime.com', 'pinterest.com', 'failblog.org', 'overstock.com', 'popcap.com'],
-    version: '1.1.0',
+    version: '1.1.1',
     // DEFAULTS - also change in content.js
   }, (items) => {
     document.getElementById('delay').value = Math.round(items.delay / 1000);
