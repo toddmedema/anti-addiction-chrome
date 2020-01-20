@@ -3,7 +3,7 @@
       "matches": ["<all_urls>"],
       "js": ["js/content.js"]
    }],
-   "description": "Fight Internet addiction, and regain focus in your life. Fully open source, and no analytics or tracking!",
+   "description": "Regain focus so that you can enjoy the important things in life. Fully open source, and no analytics or tracking.",
    "icons": {
       "128": "icon_128x128.png"
    },
@@ -17,5 +17,5 @@
    "permissions": [ "activeTab", "storage" ],
    "short_name": "Focus",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1.1"
+   "version": "1.2.0"
 }
