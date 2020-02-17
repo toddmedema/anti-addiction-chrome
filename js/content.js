@@ -12,7 +12,7 @@ function init(settings) {
   if (siteIsActive) {
     var div = document.createElement('div');
     div.id = "antiaddiction";
-    div.innerHTML = 'Shouldn\'t you be doing something else?';
+    div.innerHTML = settings.message;
     div.style.cssText = `
       position: fixed;
       top: 0;

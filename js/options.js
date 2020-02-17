@@ -8,7 +8,7 @@ function restore_options() {
     greyscale: 100,
     nuclear: false,
     urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com', 'thisiswhyimbroke.com', 'iwastesomuchtime.com', 'pinterest.com', 'failblog.org', 'overstock.com', 'popcap.com'],
-    version: '1.2.0',
+    version: '1.2.1',
     // DEFAULTS - also change in content.js
   }, (items) => {
     document.getElementById('delay').value = Math.round(items.delay / 1000);
