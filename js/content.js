@@ -1,4 +1,5 @@
 chrome.storage.sync.get({
+  stocks: false,
   delay: 2000,
   greyscale: 100,
   nuclear: false,
@@ -8,6 +9,13 @@ chrome.storage.sync.get({
 }, init);
 
 function init(settings) {
+  if (settings.stocks) {
+    var stockPrice = document.querySelector('#knowledge-finance-wholepage__entity-summary');
+    if (stockPrice) {
+      stockPrice.parentNode.removeChild(stockPrice);
+    }
+  }
+
   var siteIsActive = settings.urls.some((check) => window.location.href.indexOf(check) >= 0);
   if (siteIsActive) {
     var div = document.createElement('div');

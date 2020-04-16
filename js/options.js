@@ -6,15 +6,17 @@ function restore_options() {
     delay: 10000,
     message: 'Shouldn\'t you be doing something else?',
     greyscale: 100,
+    stocks: false,
     nuclear: false,
     urls: ['facebook.com', 'reddit.com', 'imgur.com', 'instagram.com', 'mail.google.com', 'pinterest.com', 'amazon.com', 'feedly.com', 'buzzfeed.com', 'thisiswhyimbroke.com', 'iwastesomuchtime.com', 'pinterest.com', 'failblog.org', 'overstock.com', 'popcap.com'],
-    version: '1.2.1',
+    version: '1.3.0',
     // DEFAULTS - also change in content.js
   }, (items) => {
     document.getElementById('delay').value = Math.round(items.delay / 1000);
     document.getElementById('message').value = items.message;
     document.getElementById('nuclear').checked = items.nuclear;
     document.getElementById('greyscale').value = items.greyscale;
+    document.getElementById('stocks').value = items.stocks;
     document.getElementById('urls').value = items.urls.join(',');
   });
 }
@@ -29,6 +31,7 @@ function save_options() {
     delay: document.getElementById('delay').value * 1000,
     message: document.getElementById('message').value,
     nuclear: document.getElementById('nuclear').checked,
+    stocks: document.getElementById('stocks').checked,
     greyscale: Math.min(100, Math.max(0 ,+document.getElementById('greyscale').value)),
     urls: document.getElementById('urls').value.split(',').map((url) => url.trim()),
   }, () => {
